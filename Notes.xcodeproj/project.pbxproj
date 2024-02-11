@@ -17,6 +17,8 @@
 		1184A8AD2B76BF57005CDDAE /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184A8AC2B76BF57005CDDAE /* ModelData.swift */; };
 		1184A8B02B76BFC1005CDDAE /* Notes.json in Resources */ = {isa = PBXBuildFile; fileRef = 1184A8AF2B76BFC1005CDDAE /* Notes.json */; };
 		1184A8B32B76C179005CDDAE /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184A8B22B76C179005CDDAE /* Note.swift */; };
+		1184A8B62B796E3A005CDDAE /* NotesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184A8B52B796E3A005CDDAE /* NotesList.swift */; };
+		1184A8BA2B7979DD005CDDAE /* UINavigationViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184A8B92B7979DD005CDDAE /* UINavigationViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		1184A8AC2B76BF57005CDDAE /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		1184A8AF2B76BFC1005CDDAE /* Notes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Notes.json; sourceTree = "<group>"; };
 		1184A8B22B76C179005CDDAE /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		1184A8B52B796E3A005CDDAE /* NotesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesList.swift; sourceTree = "<group>"; };
+		1184A8B92B7979DD005CDDAE /* UINavigationViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 				114231AD2B758C160046A319 /* NotesApp.swift */,
 				114231B12B758C180046A319 /* Assets.xcassets */,
 				114231B32B758C180046A319 /* Preview Content */,
+				1184A8B92B7979DD005CDDAE /* UINavigationViewControllerExtension.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 				114231AF2B758C160046A319 /* ContentView.swift */,
 				1184A8A42B76AC51005CDDAE /* FolderCell.swift */,
 				1184A8A82B76BD2C005CDDAE /* FolderList.swift */,
+				1184A8B52B796E3A005CDDAE /* NotesList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,11 +188,13 @@
 			files = (
 				114231B02B758C160046A319 /* ContentView.swift in Sources */,
 				114231AE2B758C160046A319 /* NotesApp.swift in Sources */,
+				1184A8BA2B7979DD005CDDAE /* UINavigationViewControllerExtension.swift in Sources */,
 				1184A8B32B76C179005CDDAE /* Note.swift in Sources */,
 				1184A8A92B76BD2C005CDDAE /* FolderList.swift in Sources */,
 				1184A8A72B76BB84005CDDAE /* Folder.swift in Sources */,
 				1184A8A52B76AC51005CDDAE /* FolderCell.swift in Sources */,
 				1184A8AD2B76BF57005CDDAE /* ModelData.swift in Sources */,
+				1184A8B62B796E3A005CDDAE /* NotesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

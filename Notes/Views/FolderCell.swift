@@ -23,9 +23,10 @@ struct FolderCell: View {
             }
         }
         .background(.black)
+        .padding()
     }
 }
 
 #Preview {
-    FolderCell(folder: Folder(name: "dsff", notes: []))
+    FolderCell(folder: Folder(name: "Name of the folder", notes: []))
 }

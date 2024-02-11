@@ -12,10 +12,15 @@ struct FolderList: View {
     
     var body: some View {
         NavigationSplitView {
-            List {
+            ScrollView {
                 ForEach(modelData.folders, id: \.self) { folder in
-                    FolderCell(folder: folder)
-                        .listRowBackground(Color.black)
+                    NavigationLink {
+                        NotesList(folder: folder)
+                    } label: {
+                        FolderCell(folder: folder)
+                            .background(.red)
+                            .clipShape(.buttonBorder)
+                    }
                 }
             }
             .navigationTitle("folders")
