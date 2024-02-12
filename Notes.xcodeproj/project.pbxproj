@@ -19,6 +19,7 @@
 		1184A8B32B76C179005CDDAE /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184A8B22B76C179005CDDAE /* Note.swift */; };
 		1184A8B62B796E3A005CDDAE /* NotesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184A8B52B796E3A005CDDAE /* NotesList.swift */; };
 		1184A8BA2B7979DD005CDDAE /* UINavigationViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184A8B92B7979DD005CDDAE /* UINavigationViewControllerExtension.swift */; };
+		1184A8BC2B7ACADA005CDDAE /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184A8BB2B7ACADA005CDDAE /* NoteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		1184A8B22B76C179005CDDAE /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		1184A8B52B796E3A005CDDAE /* NotesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesList.swift; sourceTree = "<group>"; };
 		1184A8B92B7979DD005CDDAE /* UINavigationViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationViewControllerExtension.swift; sourceTree = "<group>"; };
+		1184A8BB2B7ACADA005CDDAE /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				1184A8A42B76AC51005CDDAE /* FolderCell.swift */,
 				1184A8A82B76BD2C005CDDAE /* FolderList.swift */,
 				1184A8B52B796E3A005CDDAE /* NotesList.swift */,
+				1184A8BB2B7ACADA005CDDAE /* NoteCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				1184A8A92B76BD2C005CDDAE /* FolderList.swift in Sources */,
 				1184A8A72B76BB84005CDDAE /* Folder.swift in Sources */,
 				1184A8A52B76AC51005CDDAE /* FolderCell.swift in Sources */,
+				1184A8BC2B7ACADA005CDDAE /* NoteCell.swift in Sources */,
 				1184A8AD2B76BF57005CDDAE /* ModelData.swift in Sources */,
 				1184A8B62B796E3A005CDDAE /* NotesList.swift in Sources */,
 			);

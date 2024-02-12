@@ -9,6 +9,9 @@ import SwiftUI
 
 struct NotesList: View {
     @Environment(ModelData.self) var modelData
+    private let columns = [GridItem(.flexible()), 
+                           GridItem(.flexible())]
+    
     var folder: Folder
     
     var body: some View {
@@ -22,8 +25,10 @@ struct NotesList: View {
             }
             
             ScrollView {
-                ForEach(folder.notes, id: \.self) { note in
-                    Text(note.name)
+                LazyVGrid(columns: columns) {
+                    ForEach(folder.notes, id: \.self) { note in
+                        NoteCell(note: note)
+                    }
                 }
             }
         }
