@@ -11,21 +11,19 @@ struct FolderList: View {
     @Environment(ModelData.self) var modelData
     
     var body: some View {
-        NavigationSplitView {
+        NavigationStack {
             ScrollView {
                 ForEach(modelData.folders, id: \.self) { folder in
                     NavigationLink {
                         NotesList(folder: folder)
                     } label: {
                         FolderCell(folder: folder)
-                            .background(.red)
+                            .background(.darkJungleGreen)
                             .clipShape(.buttonBorder)
                     }
                 }
             }
             .navigationTitle("folders")
-        } detail: {
-            Text("Select folder")
         }
     }
 }

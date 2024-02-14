@@ -14,7 +14,7 @@ struct FolderCell: View {
         VStack(alignment: .leading) {
             Text(folder.name)
                 .font(.caption)
-                .foregroundStyle(.gray)
+                .foregroundStyle(.coolGray)
             HStack {
                 Spacer()
                 Text("\(folder.notes.count)")
@@ -22,11 +22,11 @@ struct FolderCell: View {
                     .foregroundStyle(.white)
             }
         }
-        .background(.black)
         .padding()
     }
 }
 
 #Preview {
     FolderCell(folder: Folder(name: "Name of the folder", notes: []))
+        .background(.black)
 }

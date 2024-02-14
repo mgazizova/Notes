@@ -17,11 +17,11 @@ struct NoteCell: View {
                 .padding(.bottom, 30)
                 .fixedSize(horizontal: false, vertical: true)
             Text(note.text)
-                .foregroundStyle(.gray)
+                .foregroundStyle(.coolGray)
         }
         .padding()
         .frame(width: 180, height: 180)
-        .background(.quaternary)
+        .background(.lightGray)
         .clipShape(.buttonBorder)
     }
 }
