@@ -24,6 +24,13 @@ struct FolderList: View {
                 }
             }
             .navigationTitle("folders")
+            .overlay {
+                HStack(alignment: .bottom) {
+                    Spacer()
+                    AddFolderButton()
+                        .clipShape(.circle)
+                }
+            }
         }
     }
 }

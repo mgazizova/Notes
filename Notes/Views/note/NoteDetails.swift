@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct NoteDetails: View {
-    var note: Note
+    var folder: String
+    @State var note: Note
     
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Text("folder name")
+                Text(folder)
                 Image(systemName: "smallcircle.circle.fill")
                     .scaleEffect(0.7)
                 Text(DateFormatter.localizedString(from: Date(), dateStyle: .medium, timeStyle: .none))
@@ -24,13 +25,12 @@ struct NoteDetails: View {
                 .font(.title)
                 .bold()
             
-            ScrollView {
-                Text(note.text)
-            }
+            TextEditor(text: $note.text)
         }
     }
 }
 
 #Preview {
-    NoteDetails(note: ModelData().folders[0].notes[0])
+    NoteDetails(folder: ModelData().folders[0].name, 
+                note: ModelData().folders[0].notes[0])
 }

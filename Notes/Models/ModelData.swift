@@ -9,7 +9,7 @@ import Foundation
 
 @Observable
 class ModelData {
-    var folders: [Folder] = load("Notes.json")
+    var folders: [Folder1] = load("Notes.json")
 //    var notes: [Note] = load("Notes.json")
 //    
 //    var folders: [Folder] {

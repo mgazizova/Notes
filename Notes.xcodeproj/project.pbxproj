@@ -21,6 +21,9 @@
 		1184A8BA2B7979DD005CDDAE /* UINavigationViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184A8B92B7979DD005CDDAE /* UINavigationViewControllerExtension.swift */; };
 		1184A8BC2B7ACADA005CDDAE /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184A8BB2B7ACADA005CDDAE /* NoteCell.swift */; };
 		1184A8C02B7D634E005CDDAE /* NoteDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184A8BF2B7D634E005CDDAE /* NoteDetails.swift */; };
+		1184A8C22B8D1646005CDDAE /* AddFolderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184A8C12B8D1646005CDDAE /* AddFolderButton.swift */; };
+		1184A8CA2B8D1A60005CDDAE /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1184A8C82B8D1A60005CDDAE /* Notes.xcdatamodeld */; };
+		1184A8CC2B8D1AF0005CDDAE /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184A8CB2B8D1AF0005CDDAE /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		1184A8B92B7979DD005CDDAE /* UINavigationViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationViewControllerExtension.swift; sourceTree = "<group>"; };
 		1184A8BB2B7ACADA005CDDAE /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		1184A8BF2B7D634E005CDDAE /* NoteDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetails.swift; sourceTree = "<group>"; };
+		1184A8C12B8D1646005CDDAE /* AddFolderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolderButton.swift; sourceTree = "<group>"; };
+		1184A8C92B8D1A60005CDDAE /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
+		1184A8CB2B8D1AF0005CDDAE /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,8 @@
 				114231B12B758C180046A319 /* Assets.xcassets */,
 				114231B32B758C180046A319 /* Preview Content */,
 				1184A8B92B7979DD005CDDAE /* UINavigationViewControllerExtension.swift */,
+				1184A8C82B8D1A60005CDDAE /* Notes.xcdatamodeld */,
+				1184A8CB2B8D1AF0005CDDAE /* DataController.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -111,14 +119,39 @@
 		1184A8B42B76D750005CDDAE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1184A8C72B8D1916005CDDAE /* components */,
+				1184A8C62B8D18F8005CDDAE /* note */,
+				1184A8C32B8D18D7005CDDAE /* folder */,
 				114231AF2B758C160046A319 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1184A8C32B8D18D7005CDDAE /* folder */ = {
+			isa = PBXGroup;
+			children = (
 				1184A8A42B76AC51005CDDAE /* FolderCell.swift */,
 				1184A8A82B76BD2C005CDDAE /* FolderList.swift */,
+			);
+			path = folder;
+			sourceTree = "<group>";
+		};
+		1184A8C62B8D18F8005CDDAE /* note */ = {
+			isa = PBXGroup;
+			children = (
 				1184A8B52B796E3A005CDDAE /* NotesList.swift */,
 				1184A8BB2B7ACADA005CDDAE /* NoteCell.swift */,
 				1184A8BF2B7D634E005CDDAE /* NoteDetails.swift */,
 			);
-			path = Views;
+			path = note;
+			sourceTree = "<group>";
+		};
+		1184A8C72B8D1916005CDDAE /* components */ = {
+			isa = PBXGroup;
+			children = (
+				1184A8C12B8D1646005CDDAE /* AddFolderButton.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,10 +226,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				114231B02B758C160046A319 /* ContentView.swift in Sources */,
+				1184A8C22B8D1646005CDDAE /* AddFolderButton.swift in Sources */,
 				114231AE2B758C160046A319 /* NotesApp.swift in Sources */,
+				1184A8CA2B8D1A60005CDDAE /* Notes.xcdatamodeld in Sources */,
 				1184A8BA2B7979DD005CDDAE /* UINavigationViewControllerExtension.swift in Sources */,
 				1184A8B32B76C179005CDDAE /* Note.swift in Sources */,
 				1184A8A92B76BD2C005CDDAE /* FolderList.swift in Sources */,
+				1184A8CC2B8D1AF0005CDDAE /* DataController.swift in Sources */,
 				1184A8A72B76BB84005CDDAE /* Folder.swift in Sources */,
 				1184A8A52B76AC51005CDDAE /* FolderCell.swift in Sources */,
 				1184A8C02B7D634E005CDDAE /* NoteDetails.swift in Sources */,
@@ -408,6 +444,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1184A8C82B8D1A60005CDDAE /* Notes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1184A8C92B8D1A60005CDDAE /* Notes.xcdatamodel */,
+			);
+			currentVersion = 1184A8C92B8D1A60005CDDAE /* Notes.xcdatamodel */;
+			path = Notes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 114231A22B758C160046A319 /* Project object */;
 }

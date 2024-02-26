@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Folder: Codable, Hashable {
+struct Folder1: Codable, Hashable {
     var name: String
     var notes: [Note]
 }

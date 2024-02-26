@@ -12,7 +12,7 @@ struct NotesList: View {
     private let columns = [GridItem(.flexible()), 
                            GridItem(.flexible())]
     
-    var folder: Folder
+    var folder: Folder1
     
     var body: some View {
         VStack (alignment: .leading) {
@@ -24,14 +24,12 @@ struct NotesList: View {
                 Spacer()
             }
             
-            NoteCell(note: ModelData().folders[0].notes[0])
-                .tint(.black)
-            
             ScrollView {
-                LazyVGrid(columns: columns) {
+                LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(folder.notes, id: \.self) { note in
                         NavigationLink {
-                            NoteDetails(note: note)
+                            NoteDetails(folder: folder.name,
+                                        note: note)
                         } label: {
                             NoteCell(note: note)
                                 .tint(.black)
@@ -45,6 +43,6 @@ struct NotesList: View {
 }
 
 #Preview {
-    NotesList(folder: ModelData().folders[0])
+    NotesList(folder: ModelData().folders[2])
         .environment(ModelData())
 }
